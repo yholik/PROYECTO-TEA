@@ -1,0 +1,31 @@
+:root{
+    --color-botánico : #e5f3e1;
+    --color-mikado : #d0d49a;
+    --color-velociraptor : #cbc9ab;
+    --color-manhattan : #d0d7d6;
+    --color-gablete : #bdcdcb;
+    --color-buenavida : #99b3b1;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:849px) {
+    header{
+        display: flex;
+        width: 100vh;
+        height: 25vh;
+        flex-wrap: wrap;
+    }
+
+    .container{
+    display: flex;
+    background-image: url(./static/img/bannerVertical.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+}
