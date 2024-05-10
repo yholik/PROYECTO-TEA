@@ -1,7 +1,6 @@
 :root {
     --color-firmamento: #d9e7f0;
     --color-chipichipi: #b4cbd1;
-    ;
     --color-reflejo: #cee8f1;
     --color-zirconia: #ced8de;
     --color-termo: #90b1b8;
@@ -12,25 +11,29 @@ html,
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: fit-content;
 }
 
 @media only screen and (max-width:650px) {
-  
+    body{
+        overflow-x: hidden;
+        background-image: url(./static/img/bannerVertical.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.336);
+    }
     header {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
         width: 100vh;
         height: 20vh;
     }
 
     main {
-        display: flex;
-        width: 100vh;
-        height: 75vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100vw;
     }
 
     footer {
@@ -39,52 +42,121 @@ body {
         height: 5vh;
     }
 
-    .banner{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+    /* CONTENEDOR PRINCIPAL */
 
+    .container_index {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20vh 70vh 10vh;
     }
 
-    .logo{
+    /* CONTENEDOR HEADER */
+    .container_header {
+        display: flex;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 10vh auto;
+    }
+
+    /* CONTENEDOR LOGO */
+    .logo {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
         max-width: 70px;
     }
+
     .logo img {
-        margin: 10px;
+        margin: 5px 10px;
         width: 50px;
         height: 50px;
     }
 
-    .titulo_header{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+    /* TITULO */
+    .titulo_header {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
+
     .titulo_header h1 {
         display: flex;
+        margin-top: 5px;
         max-width: 100%;
+        font-size: 1.4rem;
         color: var(--color-termo);
     }
 
-    .menu_index{
-        display: flex;
-        max-width: 100vw;
+    /* MENU */
+
+    .menu_index,
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        background-color: var(--color-termo);
     }
 
     .menu_index ul li {
-        list-style: none;
-    }
-    .menu_index ul li a{
-        text-decoration: none;
-    }
-
-    .container {
         display: flex;
-        background-image: url(./static/img/bannerVertical.png);
-        background-position: center;
-        background-size: cover;
-        max-width: 100vw;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 5px;
     }
 
+    .menu_index ul li a {
+        text-decoration: none;
+        color: var(--color-firmamento);
+    }
 
+    /* CONTENEDOR MAIN */
+    .container_main {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .texto_introduccion h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    /* FOOTER */
+
+    .foot {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .foot h4 {
+        display: flex;
+        justify-content: center;
+        align-content: end;
+        flex-wrap: wrap;
+        font-size: 16px;
+        width: 100vw;
+    }
+
+    /* EFECTOS */
+    .menu_index li:hover{
+        background-color: var(--color-chipichipi);
+    }
 }
