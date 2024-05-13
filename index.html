@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>Home - Centros de especialización en TEA</title>
+  </head>
 
-    <title> Home - Centros de especialización en TEA </title>
-</head>
-
-<body>
+  <body>
     <div class="container_index">
-        <header>
-            <div class="container_header">
-                <!-- ZONA LOGO -->
-                <div class="banner">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="./static/img/logoIndex.png" alt="Logo TEA">
-                        </a>
-                    </div>
-                    <div class="titulo_header">
-                        <h1> Centros de <br>
-                            especialización en TEA </h1>
-                    </div>
-                    <!-- ZONA MENÚ -->
-                    <div class="menu_index">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Centros</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Ayuda</a></li>
-                        </ul>
-
-                    </div>
-                </div>
+      <header>
+        <div class="container_header">
+          <!-- ZONA LOGO -->
+          <div class="banner">
+            <div class="logo">
+              <a href="index.html">
+                <img src="./static/img/logoIndex.png" alt="Logo TEA" />
+              </a>
             </div>
-        </header>
-        <!-- COMIENZO DE MAIN -->
-        <main>
-            <div class="container_main">
-                <div class="texto_introduccion">
-                    <h2>¿Qué es el TEA?</h2>
-                    <p>El Trastorno del Espectro Autista (TEA) es una condición neurológica que afecta la manera en que
-                        una persona se comunica, interactúa y percibe el mundo que le rodea.</p>
-                </div>
-                <div class="texto_desarrollo">
-                    <p>Encontrar el apoyo adecuado es crucial para las familias que tienen un miembro con TEA. <b>Centros TEA</b> está aquí para ayudarles a encontrar a los especialistas y recursos necesarios
-                        para brindar el mejor cuidado y apoyo.</p>
-                </div>
+            <div class="titulo_header">
+              <h1>
+                Centros de <br />
+                especialización en TEA
+              </h1>
             </div>
-        </main>
-        <footer>
-            <div class="foot">
-                <h4> 2024 - Francys Navas - Romina Arias - Yamila Holik </h4>
+            <!-- ZONA MENÚ -->
+            <div class="menu_index">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Centros</a></li>
+                <li><a href="#contactForm">Contacto</a></li>
+                <li><a href="#">Ayuda</a></li>
+              </ul>
             </div>
-        </footer>
+          </div>
+        </div>
+      </header>
+      <!-- COMIENZO DE MAIN -->
+      <main>
+        <div class="container_main">
+          <div class="texto_introduccion">
+            <h2>¿Qué es el TEA?</h2>
+            <p>
+              El Trastorno del Espectro Autista (TEA) es una condición
+              neurológica que afecta la manera en que una persona se comunica,
+              interactúa y percibe el mundo que le rodea.
+            </p>
+          </div>
+          <div class="texto_desarrollo">
+            <p>
+              Encontrar el apoyo adecuado es crucial para las familias que
+              tienen un miembro con TEA. <b>Centros TEA</b> está aquí para
+              ayudarles a encontrar a los especialistas y recursos necesarios
+              para brindar el mejor cuidado y apoyo.
+            </p>
+          </div>
+        </div>
+        <div id="contactForm" class="container_form">
+          <form>
+            <label for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" /><br />
+            <label for="mail">Email:</label><br />
+            <input type="email" id="mail" name="mail" /><br />
+            <label for="telefono">Teléfono:</label><br />
+            <input type="tel" id="telefono" name="telefono" /><br />
+            <label for="centro">Centro:</label><br />
+            <input type="text" id="centro" name="centro" /><br />
+            <label for="consulta">Consulta:</label><br />
+            <textarea id="consulta" name="consulta"></textarea><br />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+        <!-- FIN DE FORMULARIO -->
+      </main>
+      <footer>
+        <div class="foot">
+          <h4>2024 - Francys Navas - Romina Arias - Yamila Holik</h4>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>

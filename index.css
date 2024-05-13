@@ -14,13 +14,14 @@ body {
 }
 
 @media only screen and (max-width:650px) {
-    body{
+    body {
         overflow-x: hidden;
         background-image: url(./static/img/bannerVertical.png);
         background-position: center;
         background-size: cover;
         box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.336);
     }
+
     header {
         display: grid;
         width: 100vh;
@@ -156,7 +157,69 @@ body {
     }
 
     /* EFECTOS */
-    .menu_index li:hover{
+    .menu_index li:hover {
         background-color: var(--color-chipichipi);
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    .container_form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container_form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_form label,
+    .container_form input,
+    .container_form textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container_form {
+        width: 70%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .container_form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_form label,
+    .container_form input,
+    .container_form textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Estilos para escritorios */
+@media (min-width: 1025px) {
+    .container_form {
+        width: 50%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .container_form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_form label,
+    .container_form input,
+    .container_form textarea {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
