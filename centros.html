@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>TEApoyo</title>
+  </head>
+  <body>
+    <div class="container_index">
+      <header>
+        <div class="container_header">
+          <!-- ZONA LOGO -->
+          <div class="banner">
+            <div class="logo first_banner">
+              <a href="index.html">
+                <img src="./static/img/logoIndex.png" alt="Logo TEA" />
+              </a>
+            </div>
+            <div class="titulo_header first_banner">
+              <h1>TEApoyo</h1>
+            </div>
+            <!-- ZONA MENÚ -->
+            <div class="menu_index">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./centros.html">Centros</a></li>
+                <li><a href="./form.html">Contacto</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="container_main">
+          <br>
+        <div class="container">
+          <div class="item">
+            <h1>TEApoyo</h1>
+            <p class="intro-centros">
+              Red de apoyo y ayuda para Familias y Padres de personas enel
+              Trastorno del Espectro Autista
+            </p>
+          </div>
+          <div class="item">
+            <p class="intro-centros">
+              Los trastornos del espectro autista (TEA) son un grupo de
+              discapacidades del desarrollo que pueden provocar problemas
+              sociales, comunicacionales y conductuales significativos. Los
+              Centros para el Control y Prevención de Enfermedades (CDC) están
+              comprometidos a seguir brindando datos esenciales sobre los TEA,
+              buscar los factores que ponen a los niños en riesgo de TEA y sus
+              posibles causas, y desarrollar recursos que ayuden a identificar a
+              los niños con TEA lo antes posible.
+            </p>
+          </div>
+        </div>
+        <!-- Card de centros medicos -->
+        <div class="container"><br>
+          <div id="centros"></div><br>
+        </div>
+      </div>
+      </main>
+
+      <footer>
+        <h4> C.A.C. 2024  Francys Navas - Yamila Holik - Romina Arias </h4>
+      </footer>
+    </div>
+    <script src="./js/dataCentros.js"></script>
+    <script src="./js/cards.js"></script>
+  </body>
+</html>
