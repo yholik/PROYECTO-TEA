@@ -14,10 +14,12 @@
 
     <title>Home - Centros de especialización en TEA</title>
   </head>
+
   <body>
     <div class="container_index">
       <header>
         <div class="container_header">
+          <!-- ZONA LOGO -->
           <div class="banner">
             <div class="logo first_banner">
               <a href="index.html">
@@ -27,6 +29,7 @@
             <div class="titulo_header first_banner">
               <h1>TEApoyo</h1>
             </div>
+            <!-- ZONA MENÚ -->
             <div class="menu_index">
               <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -40,21 +43,30 @@
       </header>
       <main>
         <div class="container_main">
-          <div class="texto_introduccion">
-            <h2>¿Qué es el TEA?</h2>
-            <p>
-              El Trastorno del Espectro Autista (TEA) es una condición
-              neurológica que afecta la manera en que una persona se comunica,
-              interactúa y percibe el mundo que le rodea.
-            </p>
-          </div>
-          <div class="texto_desarrollo">
-            <p>
-              Encontrar el apoyo adecuado es crucial para las familias que
-              tienen un miembro con TEA. <br /><b>TEApoyo</b> está aquí para
-              ayudarles a encontrar a los especialistas y recursos necesarios
-              para brindar el mejor cuidado y apoyo.
-            </p>
+          <div id="contactForm" class="container_form">
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" />
+              </div>
+              <div class="form-group">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" />
+              </div>
+              <div class="form-group">
+                <label for="centro">Centro:</label>
+                <input type="text" id="centro" name="centro" />
+              </div>
+              <div class="form-group">
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta"></textarea>
+              </div>
+              <input type="submit" value="Enviar" />
+            </form>
           </div>
         </div>
       </main>
