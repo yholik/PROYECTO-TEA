@@ -17,50 +17,65 @@
 <body>
     <div class="container_index">
         <header>
+            <!-- ZONA BANNER -->
             <div class="container_header">
-                <!-- ZONA LOGO -->
-                <div class="banner">
+                <div id="banner" class="banner">
+                    <!-- LOGO -->
                     <div class="logo first_banner">
                         <a href="index.html">
                             <img src="./static/img/logoIndex.png" alt="Logo TEA">
                         </a>
                     </div>
+                    <!-- TITULO -->
                     <div class="titulo_header first_banner">
                         <h1>TEApoyo</h1>
                     </div>
-                    <!-- ZONA MENÚ -->
-                    <div class="menu_index">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Centros</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Ayuda</a></li>
+                    <!-- MENÚ -->
+                    <nav class="main_nav">
+                        <div id="toggle_menu" class="toggle_menu">
+                            <img src="./assets/burger-bar.png" alt="">
+                        </div>
+                        <ul id="main_menu" class="main_menu main_menu_tablet">
+                            <li class="main_menu_item"><a href="#" class="main_menu_link">Home</a></li>
+                            <li class="main_menu_item"><a href="#" class="main_menu_link">Centros</a></li>
+                            <li class="main_menu_item"><a href="#" class="main_menu_link">Contacto</a></li>
+                            <li class="main_menu_item"><a href="#" class="main_menu_link">Ayuda</a></li>
                         </ul>
-
-                    </div>
+                </nav>
+                
+                <!--FIN MENU-->
                 </div>
             </div>
+            <!-- FIN BANNER -->
         </header>
         <!-- COMIENZO DE MAIN -->
         <main>
             <div class="container_main">
-                <div class="texto_introduccion">
+                <div class="main_texto">
                     <h2>¿Qué es el TEA?</h2>
                     <p>El Trastorno del Espectro Autista (TEA) es una condición neurológica que afecta la manera en que
                         una persona se comunica, interactúa y percibe el mundo que le rodea.</p>
                 </div>
-                <div class="texto_desarrollo">
+                <div class="main_texto">
                     <p>Encontrar el apoyo adecuado es crucial para las familias que tienen un miembro con TEA.
                         <br><b>TEApoyo</b> está aquí para ayudarles a encontrar a los especialistas y recursos
                         necesarios
                         para brindar el mejor cuidado y apoyo.</p>
-                </div>
+            </div> 
+            <div class="main_btn">
+                <a href="#" class="main_btn_link"> Contacto </a>
             </div>
+            </div>
+
+            
         </main>
+        <!-- FIN MAIN -->
         <footer>
                 <h4> 2024 - Francys Navas - Yamila Holik - Romina Arias </h4>
         </footer>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/menuTablet.js"></script>
 </body>
 
 </html>
