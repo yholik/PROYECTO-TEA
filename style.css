@@ -381,3 +381,78 @@ article:has(:hover, :focus) {
     padding: 10px 5px;
   }
 }
+
+/* Media Queries para hacer el formulario responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input-group span,
+  .input-group input,
+  .input-group textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group span,
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .input-group span {
+    border-radius: 5px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    border-radius: 5px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Media Queries para hacer el menú responsive */
+@media (max-width: 768px) {
+  .menu_index ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu_index ul li {
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    font-size: 2em;
+    margin-left: 1em;
+  }
+
+  .menu_index ul.menu-list-active {
+    display: flex;
+    background-color: #333333;
+    width: 100%;
+    z-index: 1;
+    padding: 30px;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+}
