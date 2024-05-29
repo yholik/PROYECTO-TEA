@@ -18,7 +18,7 @@
     />
     <title>Contacto - TEApoyo</title>
   </head>
-  <body>
+  <body class="contacto">
     <div class="container_index">
       <header>
         <div class="container_header">
@@ -47,57 +47,34 @@
     </div>
 
     <main>
-      <div class="container mt-5">
-        <h2 class="mb-4">Formulario de Contacto</h2>
+      <div class="container">
         <form>
-          <div class="mb-3 input-group">
-            <span class="input-group-text"><i class="bi bi-person"></i></span>
-            <input
-              type="text"
-              class="form-control"
-              id="nombre"
-              placeholder="Nombre"
-              required
-            />
-          </div>
-          <div class="mb-3 input-group">
-            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Correo Electrónico"
-              required
-            />
-          </div>
-          <div class="mb-3 input-group">
-            <span class="input-group-text"><i class="bi bi-phone"></i></span>
-            <input
-              type="tel"
-              class="form-control"
-              id="telefono"
-              placeholder="Teléfono"
-              required
-            />
-          </div>
-          <div class="mb-3 input-group">
-            <span class="input-group-text"
-              ><i class="bi bi-chat-dots"></i
-            ></span>
+          <label for="name">
+            <i class="icon">👤</i>
+            <input type="text" id="name" name="name" placeholder="Nombre" />
+          </label>
+          <label for="email">
+            <i class="icon">📧</i>
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </label>
+          <label for="phone">
+            <i class="icon">📞</i>
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" />
+          </label>
+          <label for="message">
+            <i class="icon">✉️</i>
             <textarea
-              class="form-control"
-              id="mensaje"
-              rows="3"
+              id="message"
+              name="message"
               placeholder="Mensaje"
-              required
             ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          </label>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </main>
 
-    <footer class="mt-5">
+    <footer class="footer">
       C.A.C 2024 - Francys Navas - Romina Arias - Yamila Holik
     </footer>
 

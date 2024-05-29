@@ -25,6 +25,15 @@ body {
   font-family: var(--main-font-family);
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-size: cover;
+  font-family: var(--main-font-family);
+  background-image: url(./img/bannerHorizontal.jpeg);
+  background-position: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -384,15 +393,30 @@ article:has(:hover, :focus) {
 
 /* Media Queries para hacer el formulario responsive */
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
+  form {
     padding: 10px;
   }
 
-  .input-group span,
-  .input-group input,
-  .input-group textarea {
-    font-size: 0.9rem;
+  form label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+
+  form button {
+    width: 100%;
+    /* Full width button on smaller screens */
+  }
+
+  input {
+    width: 100%;
   }
 }
 
@@ -454,5 +478,152 @@ article:has(:hover, :focus) {
 
   .logo {
     flex-direction: column;
+  }
+}
+
+/* Estilos generales */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Estilos para cada campo de entrada */
+form label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los iconos */
+form label i {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Estilos para los campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos específicos para el textarea */
+form textarea {
+  height: 100px;
+}
+
+/* Estilos para el botón */
+form button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Efecto hover para el botón */
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Ajustes para vista móvil */
+@media (max-width: 600px) {
+  form label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* Asegura que los elementos estén en fila */
+  }
+
+  form label i {
+    width: 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+    width: 80%;
+  }
+
+  form button {
+    width: 50%;
+    margin-left: 8em
+  }
+}
+
+/* Ajustes para vista de escritorio */
+@media (min-width: 601px) {
+  form label {
+    display: flex;
+    align-items: center;
+  }
+
+  form label i {
+    width: 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: -30px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+    width: 80%;
+  }
+
+  form button {
+    width: 50%;
+    margin-left: 12em
+  }
+}
+
+.contacto {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+
+  /* Estilos para dispositivos móviles */
+  .container {
+    padding: 10px;
+    width: 30px;
+  }
+
+  .footer {
+    text-align: center;
+    width: 45%;
+  }
+
+  form {
+    width: 43%;
+    margin: 0;
   }
 }
